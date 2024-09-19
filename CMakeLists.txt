@@ -25,8 +25,9 @@
 #
 
 cmake_minimum_required (VERSION 2.8.12)
+cmake_policy(SET CMP0048 NEW)
+project (nanomsg VERSION 1.2.1 DESCRIPTION "simple lightweight message library" LANGUAGES C)
 
-project (nanomsg C)
 include (CheckFunctionExists)
 include (CheckSymbolExists)
 include (CheckStructHasMember)
