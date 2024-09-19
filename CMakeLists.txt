@@ -26,7 +26,7 @@
 
 cmake_minimum_required (VERSION 2.8.12)
 cmake_policy(SET CMP0048 NEW)
-project (nanomsg VERSION 1.2.1 DESCRIPTION "simple lightweight message library" LANGUAGES C)
+project (nanomsg VERSION 1.2.1 DESCRIPTION "High-Performance Scalability Protocols" LANGUAGES C)
 
 include (CheckFunctionExists)
 include (CheckSymbolExists)
@@ -46,7 +46,6 @@ if ("${isSystemDir}" STREQUAL "-1")
     set (CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_LIBDIR}")
 endif ("${isSystemDir}" STREQUAL "-1")
 
-set (NN_DESCRIPTION "High-Performance Scalability Protocols")
 set (ISSUE_REPORT_MSG "Please consider opening an issue at https://github.com/nanomsg/nanomsg")
 
 # Determine library versions.
